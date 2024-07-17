@@ -1,0 +1,1557 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Course Checkpoint 14</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <style>
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: larger;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        color: brown;
+      }
+      body {
+        font-size: larger;
+        margin-left: 15%;
+        margin-right: 15%;
+        line-height: 1.5em;
+      }
+      img {
+        max-width: 100%;
+        max-height: 70%;
+      }
+      p {
+        text-indent: 1.5em;
+      }
+      #fixedbutton {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="course-checkpoint-14">Course Checkpoint 14</h1>
+      <hr />
+
+      <ul class="nav">
+        <li>
+          <a href="#explica-paso-a-paso-como-instalar-un-modulo-en-node"
+            >Explica paso a paso como instalar un Modulo en Node!</a
+          >
+        </li>
+        <li>
+          <a
+            href="#cuales-son-los-dos-tipos-de-componentes-en-react-y-explique-cada-uno-de-ellor"
+            >Cuales son los dos tipos de componentes en React y explique cada
+            uno de ellos</a
+          >
+        </li>
+        <li>
+          <a href="#porque-utilizamos-props-en-react-cual-es-su-funcionalidad"
+            >Porque utilizamos Props en React? cual es su funcionalidad?</a
+          >
+        </li>
+        <li><a href="#que-es-jsx">Que es JSX?</a></li>
+        <li>
+          <a href="#que-es-el-state-en-react">Qué es el estado en React?</a>
+        </li>
+        <li>
+          <a
+            href="#en-que-tipo-de-componente-se-utiliza-el-constructor-y-explique-porque"
+            >Qué componente utiliza el Constructor y explica por qué!</a
+          >
+        </li>
+      </ul>
+      <hr />
+      <h2 id="explica-paso-a-paso-como-instalar-un-modulo-en-node">
+        Explica paso a paso como instalar un Modulo en Node
+      </h2>
+      <p><img src="images/npm.png" alt="npm" /></p>
+      <p>
+        <strong>Node Package Manager (npm)</strong> es un administrador de
+        paquetes de JavaScript que gestiona las dependencias en proyectos
+        escritos en Node.js.
+      </p>
+      <p>
+        Con este administrador, puede administrar la instalación, actualización
+        y eliminación de paquetes (bibliotecas). En términos generales, npm es
+        el registro de software más grande del mundo.
+      </p>
+      <p>npm tiene tres componentes:</p>
+      <ul>
+        <li>Sitio web;</li>
+        <li>interfaz de línea de comando (CLI);</li>
+        <li>registro.</li>
+      </ul>
+      <p>
+        Desde el sitio web, puede encontrar paquetes, configurar perfiles y
+        administrar otros aspectos de su experiencia npm. Por ejemplo, puede
+        configurar una organi zación para controlar el acceso a paquetes
+        públicos o privados.
+      </p>
+      <p>
+        La interfaz de línea de comandos (CLI) se ejecuta en la terminal a
+        través de la cual los desarrolladores interactúan con npm.
+      </p>
+      <p>
+        El registro es una gran base de datos pública con software JavaScript y
+        metainformación que lo acompaña.
+      </p>
+      <h3 id="¿para-qué-se-utiliza-el-node-package-manager">
+        ¿Para qué se utiliza el Node Package Manager?
+      </h3>
+      <p>
+        Los desarrolladores de software de código abierto de todo el mundo
+        utilizan npm para compartir y tomar prestados paquetes.
+      </p>
+      <p>Con npm puedes:</p>
+      <ul>
+        <li>
+          adapte paquetes de código a sus aplicaciones o utilícelos en su forma
+          original;
+        </li>
+        <li>
+          descargue herramientas sin conexión que pueda utilizar inmediatamente;
+        </li>
+        <li>ejecutar paquetes sin descargarlos;</li>
+        <li>
+          compartir código con cualquier usuario de npm, independientemente de
+          su ubicación;
+        </li>
+        <li>
+          limitar el acceso al código proporcionándolo únicamente a
+          desarrolladores individuales;
+        </li>
+        <li>
+          crear organizaciones para gestionar el mantenimiento de paquetes, la
+          creación de códigos y la mano de obra de los desarrolladores;
+        </li>
+        <li>formar equipos virtuales utilizando organizaciones;</li>
+        <li>gestionar versiones y dependencias de código;</li>
+        <li>
+          actualizar rápidamente las aplicaciones al actualizar el código
+          subyacente;
+        </li>
+        <li>encontrar múltiples formas de resolver el mismo problema;</li>
+        <li>
+          Encuentre otros desarrolladores que estén trabajando en problemas y
+          proyectos similares.
+        </li>
+      </ul>
+      <h3 id="beneficios-de-usar-npm">Beneficios de usar npm</h3>
+      <p>
+        Existen muchos beneficios al usar npm al desarrollar proyectos de
+        Node.js:
+      </p>
+      <ul>
+        <li>
+          Fácil de instalar. npm viene con Node.js, por lo que la instalación
+          solo lleva unos minutos.
+        </li>
+        <li>
+          Gestión de dependencia. npm simplifica la gestión de dependencias, lo
+          cual es especialmente importante para proyectos con una gran cantidad
+          de módulos. Cada paquete en npm es una colección de archivos y
+          dependencias que puedes instalar y usar en tu proyecto.
+        </li>
+        <li>
+          Soporte para paquetes de publicación. npm permite a los
+          desarrolladores publicar sus paquetes, lo que les ayuda a compartir
+          sus bibliotecas y módulos con otros desarrolladores de todo el mundo.
+        </li>
+        <li>
+          Gran cantidad de paquetes disponibles. npm ofrece acceso a más de 1,5
+          millones de paquetes, lo que permite a los desarrolladores encontrar
+          rápida y fácilmente los módulos y bibliotecas que necesitan. Con npm
+          puedes instalar paquetes desde el repositorio central de npm o desde
+          archivos locales.
+        </li>
+        <li>
+          Control de versiones. npm controla automáticamente las versiones de
+          los paquetes, lo que permite a los desarrolladores evitar conflictos
+          entre las versiones de los módulos. Puede instalar una versión
+          específica de un paquete o puede actualizar el paquete a la última
+          versión. Esto garantiza que su proyecto sea compatible con todas las
+          dependencias requeridas.
+        </li>
+        <li>
+          Soporte de línea de comando. El uso de comandos CLI le permite
+          automatizar la instalación y la gestión de dependencias.
+        </li>
+      </ul>
+      <p>
+        El uso de npm facilita mucho el desarrollo de proyectos de Node.js,
+        razón por la cual se ha convertido en uno de los administradores de
+        paquetes más populares del mundo.
+      </p>
+      <h3 id="descripción-general-de-cómo-funciona-npm">
+        Descripción general de cómo funciona npm
+      </h3>
+      <p>Para trabajar con npm necesitas instalar Node.js.</p>
+      <p>
+        Para publicar paquetes en espacios de nombres, debe crear una cuenta en
+        npmjs.com y configurar la autenticación de dos factores (opcional, pero
+        recomendada).
+      </p>
+      <p>
+        Un paquete es un archivo o directorio descrito en el archivo
+        <strong>package.json</strong> adjunto. Este archivo es necesario para
+        publicar el paquete en el registro npm.
+      </p>
+      <p>
+        Echemos un vistazo más de cerca a los procesos de instalación y creación
+        de paquetes.
+      </p>
+      <h4 id="instalación-de-paquetes">Instalación de paquetes</h4>
+      <p>Los paquetes se pueden instalar local o globalmente.</p>
+      <h5 id="instalación-local">Instalación local</h5>
+      <p>
+        Instale el paquete localmente si su propio módulo depende de él, por
+        ejemplo si está especificado en la función <strong>require()</strong>.
+        Este es el comportamiento predeterminado de npm.
+      </p>
+      <h6
+        id="instalación-de-un-paquete-desde-el-espacio-de-nombres-global-paquete-sin-ámbito"
+      >
+        Instalación de un paquete desde el espacio de nombres global (paquete
+        sin ámbito)
+      </h6>
+      <p>
+        Los paquetes del espacio de nombres global siempre son públicos.
+        Cualquier usuario puede encontrar dicho paquete, descargarlo e
+        instalarlo.
+      </p>
+      <p>
+        Para instalar un paquete público, ejecute el siguiente comando en el
+        directorio de su proyecto:
+      </p>
+      <pre><code class="language-Shell">npm install &lt;package_name&gt;
+</code></pre>
+      <p>
+        Se creará un directorio llamado <strong>node_modules</strong> en el
+        directorio actual (si aún no se ha creado) y se descargará en él la
+        versión más reciente del paquete.
+      </p>
+      <h6
+        id="instalación-de-un-paquete-público-desde-un-espacio-de-nombres-específico-paquete-público-con-alcance"
+      >
+        Instalación de un paquete público desde un espacio de nombres específico
+        (paquete público con alcance)
+      </h6>
+      <p>
+        Cualquiera puede descargar e instalar un paquete público de un espacio
+        de nombres específico si el nombre del espacio de nombres se especifica
+        durante la instalación:
+      </p>
+      <pre><code class="language-Shell">npm install @scope/package-name
+</code></pre>
+      <h6 id="instalar-un-paquete-privado">Instalar un paquete privado</h6>
+      <p>
+        Los paquetes privados (privados) solo pueden ser descargados por
+        aquellos a quienes se les ha otorgado acceso de lectura a esos paquetes.
+        Estos paquetes siempre pertenecen a un espacio de nombres y deben
+        especificarse durante la instalación:
+      </p>
+      <pre><code class="language-Shell">npm install @scope/private-package-name
+</code></pre>
+      <h5 id="instalación-global">Instalación global</h5>
+      <p>
+        Para ejecutar paquetes globalmente, se recomienda utilizar npx, una
+        utilidad para ejecutar paquetes npm.
+      </p>
+      <p>
+        Si un paquete está instalado globalmente, puede usar su código como un
+        conjunto de herramientas en su computadora local.
+      </p>
+      <p>
+        Para descargar e instalar el paquete globalmente, ejecute el siguiente
+        comando en el símbolo del sistema:
+      </p>
+      <pre><code class="language-Shell">npm install -g &lt;package_name&gt;
+</code></pre>
+      <p>
+        Si se produce un error de permisos de EACCES, es posible que deba
+        reinstalar npm usando el administrador de versiones o cambiar
+        manualmente el directorio predeterminado.
+      </p>
+      <h4 id="colocación-del-paquete">Colocación del paquete</h4>
+      <p>
+        Para colocar un paquete en el registro, necesita un archivo
+        <strong>package.json</strong>, que contiene una descripción del paquete.
+        Hace que el paquete sea fácil de instalar y administrar. En el archivo
+        <strong>package.json</strong>:
+      </p>
+      <ul>
+        <li>enumera los paquetes de los que depende su proyecto;</li>
+        <li>
+          especifica las versiones de paquetes que su proyecto puede usar;
+        </li>
+        <li>
+          El diseño es reproducible para compartirlo fácilmente con otros
+          desarrolladores.
+        </li>
+      </ul>
+      <p>
+        Para facilitar la búsqueda, se recomienda utilizar un campo de
+        <em>descripción</em> personalizado en el archivo
+        <strong>package.json</strong>.
+      </p>
+      <p>
+        El archivo package.json se puede crear de dos maneras: (1) respondiendo
+        preguntas en la CLI o (2) creando un package.json predeterminado.
+      </p>
+      <p>Para crear un archivo de la primera manera:</p>
+      <ul>
+        <li>
+          <p>
+            En la línea de comando, vaya al directorio raíz de su módulo Node.js
+            y ejecute <strong>npm init</strong>:
+          </p>
+          <ul>
+            <li>
+              para un módulo con un espacio de nombres, ejecute
+              <strong>npm init --scope=@scope-name</strong>;
+            </li>
+            <li>
+              Para un módulo en el espacio de nombres global, ejecute
+              <strong>npm init</strong>.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Especifique valores para los campos obligatorios (<strong
+              >name</strong
+            >
+            y <strong>version</strong>), así como el campo
+            <strong>main</strong>:
+          </p>
+          <ul>
+            <li><strong>name</strong>: nombre del módulo.</li>
+            <li><strong>version</strong>: versión inicial del módulo.</li>
+            <li>
+              <strong>main</strong>: un identificador de módulo que sirve como
+              punto de entrada principal a su programa. Si no se establece este
+              valor, el valor predeterminado es el archivo index.js en la raíz
+              del paquete.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Para crear un archivo package.json predeterminado, ejecute
+        <strong>npm init --yes</strong>.
+      </p>
+      <p>
+        Los campos <strong>name</strong> y <strong>version</strong> son
+        obligatorios, independientemente de cómo cree el archivo
+        <strong>package.json</strong>:
+      </p>
+      <ul>
+        <li>
+          El campo <strong>name</strong> contiene el nombre del paquete. El
+          nombre debe ser una palabra y puede contener caracteres en minúscula,
+          guión y guión bajo.
+        </li>
+        <li>
+          El valor en el campo <strong>version</strong> debe cumplir con las
+          pautas de control de versiones semánticas. Se indican tres números
+          mediante un punto: la versión principal actual, la versión menor
+          actual y los cambios menores. Por ejemplo, 1.1.0.
+        </li>
+      </ul>
+      <p>
+        Si desea proporcionar información sobre el autor de un paquete, utilice
+        el siguiente formato:
+      </p>
+      <pre><code>My name my@email.com (http://website.com)
+</code></pre>
+      <p>
+        Todo el código para crear e inicializar el archivo
+        <strong>package.json</strong> podría verse así:
+      </p>
+      <pre><code class="language-json">{
+  &quot;name&quot;: &quot;my-cool-package&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;author&quot;: My name my@email.com (http://website.com)
+}
+</code></pre>
+      <h4 id="archivo-para-cargar-un-módulo-usando-require">
+        Archivo para cargar un módulo usando require()
+      </h4>
+      <p>
+        La función <strong>require()</strong> es una función de Node.js para
+        cargar módulos. Sus argumentos incluyen el nombre del módulo que
+        necesitamos.
+      </p>
+      <p>
+        <strong>require()</strong> puede ser útil si queremos utilizar un módulo
+        de terceros en nuestro paquete. Para crear un archivo
+        <strong>package.json</strong> usando esta función, declar arlo como una
+        propiedad del objeto <strong>exports</strong>. Esto le dará acceso al
+        código de terceros:
+      </p>
+      <pre><code>exports.logMsg = function() {
+  console.log(&quot;Hello!&quot;);
+}
+</code></pre>
+      <h4
+        id="crear-y-publicar-un-paquete-público-en-el-espacio-de-nombres-global"
+      >
+        Crear y publicar un paquete público en el espacio de nombres global
+      </h4>
+      <ul>
+        <li>en la línea de comando, cree un directorio de paquetes;</li>
+        <li>vaya al directorio del paquete;</li>
+        <li>
+          en el directorio raíz del paquete, ejecute el comando
+          <strong>npm init</strong>;
+        </li>
+        <li>
+          responda las preguntas para crear un archivo
+          <strong>package.json</strong>;
+        </li>
+        <li>
+          cree un archivo README que describa el código y las instrucciones para
+          usarlo;
+        </li>
+        <li>crear código de paquete;</li>
+        <li>
+          revise el paquete en busca de información confidencial y retírelo si
+          está presente;
+        </li>
+        <li>
+          pruebe el paquete especificando la ruta completa a su directorio:
+          <strong>npm install path/to/my-package</strong>;
+        </li>
+        <li>
+          Publique el paquete ejecutando el comando
+          <strong>npm publish</strong> desde el directorio raíz del paquete;
+        </li>
+        <li>
+          Para ver un paquete publicado, vaya a
+          <em
+            ><a href="https://npmjs.com/package/package-name"
+              >https://npmjs.com/package/package-name</a
+            ></em
+          >
+          y reemplace <em>package-name</em> con el nombre de su paquete.
+        </li>
+      </ul>
+      <blockquote>
+        <p>¡Importante! No incluya información confidencial en los paquetes.</p>
+      </blockquote>
+      <h4
+        id="crear-y-publicar-un-paquete-público-en-un-espacio-de-nombres-específico"
+      >
+        Crear y publicar un paquete público en un espacio de nombres específico
+      </h4>
+      <p>
+        Para publicar un paquete npm en un espacio de nombres personalizado,
+        cree una cuenta <strong>npm</strong>. O, para publicar un paquete en el
+        espacio de nombres de una organización, después de crear una cuenta,
+        cree una organización.
+      </p>
+      <ul>
+        <li>
+          si usa npmrc para administrar cuentas, cambie al perfil deseado con el
+          comando <strong>npmrc profile-name</strong>;
+        </li>
+        <li>en la línea de comando, cree un directorio de paquetes;</li>
+        <li>vaya al directorio del paquete;</li>
+        <li>
+          En el directorio raíz del paquete, ejecute uno de los siguientes
+          comandos:
+          <ul>
+            <li>
+              para un paquete en el espacio de nombres de la organización
+              (reemplace my-org con el nombre de la organización):
+              <strong>npm init --scope=@my-org</strong>;
+            </li>
+            <li>
+              para un paquete en el espacio de nombres de usuario (reemplace
+              mi-nombre de usuario con el nombre de usuario):
+              <strong>npm init --scope=@my-username</strong>.
+            </li>
+          </ul>
+        </li>
+        <li>
+          responda las preguntas para crear un archivo
+          <strong>package.json</strong>;
+        </li>
+        <li>
+          cree un archivo README que describa el código y las instrucciones para
+          usarlo;
+        </li>
+        <li>crear código de paquete;</li>
+        <li>
+          revise el paquete en busca de información confidencial y retírelo si
+          está presente;
+        </li>
+        <li>
+          pruebe el paquete especificando la ruta completa a su directorio:
+          <strong>npm install path/to/my-package</strong>;
+        </li>
+        <li>
+          publique el paquete ejecutando el comando
+          <strong>npm publish --access public</strong> desde el directorio raíz
+          del paquete;
+        </li>
+        <li>
+          Para ver un paquete publicado, vaya a
+          <strong
+            ><a href="https://npmjs.com/package/package-name"
+              >https://npmjs.com/package/package-name</a
+            ></strong
+          >, reemplazando <strong>package-name</strong> con el nombre de su
+          paquete.
+        </li>
+      </ul>
+      <h3 id="conclusión">Conclusión</h3>
+      <p>
+        npm es una herramienta importante e imprescindible para desarrollar
+        proyectos Node.js. Debido al hecho de que el repositorio npm contiene
+        una gran cantidad de paquetes, los desarrolladores pueden agregar
+        funcionalidad a sus proyectos de manera rápida y conveniente utilizando
+        módulos y bibliotecas ya preparados.
+      </p>
+      <p>
+        Una de las principales ventajas de npm es la facilidad de instalación y
+        gestión de dependencias. Con el comando npm install, puede instalar
+        rápidamente todoslos paquetes necesarios para un proyecto y, con la
+        administración de dependencias, npm instala y actualiza automáticamente
+        las dependencias de los paquetes.
+      </p>
+      <p>
+        Además, npm proporciona capacidades de publicación de paquetes, lo que
+        permite a los desarrolladores compartir sus módulos y bibliotecas con
+        otros desarrolladores de todo el mundo. De esta manera, puedes crear
+        proyectos mejores y más eficientes a través de la interacción y
+        colaboración entre desarrolladores.
+      </p>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <hr />
+      <hr />
+      <h2
+        id="cuales-son-los-dos-tipos-de-componentes-en-react-y-explique-cada-uno-de-ellor"
+      >
+        Cuales son los dos tipos de componentes en React y explique cada uno de
+        ellor
+      </h2>
+      <p><img src="images/comp01.png" alt="compo01" /></p>
+      <p>
+        ¿En qué se diferencian los componentes funcionales de React de los
+        componentes basados en clases? Desde hace bastante tiempo, la respuesta
+        tradicional a esta pregunta es: «La aplicación de las clases permite
+        aprovechar más las posibilidades de los componentes, por ejemplo, el
+        estado». Ahora, con la aparición de los hooks, esta respuesta ya no
+        refleja la verdadera situación.
+      </p>
+      <p>
+        Puede que haya oído hablar de que uno de estos tipos de componentes
+        tiene un mejor rendimiento que el otro. ¿Pero cuál? La mayoría de los
+        puntos de referencia con los que se verifica esto tienen deficiencias,
+        por lo que sacaría conclusiones en base a sus resultados, con mucho
+        cuidado. El rendimiento depende básicamente de lo que ocurra en el
+        código, no de si se seleccionan componentes funcionales o componentes
+        basados en clases para implementar ciertas capacidades. Nuestro estudio
+        encontró que la diferencia de rendimiento entre los diferentes tipos de
+        componentes es insignificante. Sin embargo, hay que señalar que las
+        estrategias de optimización aplicadas a la hora de trabajar con ellos
+        varían ligeramente.
+      </p>
+      <h3
+        id="¿cuáles-son-las-características-del-código-de-componentes-basado-en-funciones-y-clases"
+      >
+        ¿Cuáles son las características del código de componentes basado en
+        funciones y clases?
+      </h3>
+      <p>Considere este componente:</p>
+      <pre><code class="language-JavaScript">function ProfilePage(props) {
+  const showMessage = () =&gt; {
+    alert(&#39;Followed &#39; + props.user);
+  };
+
+  const handleClick = () =&gt; {
+    setTimeout(showMessage, 3000);
+  };
+
+  return (
+    &lt;button onClick={handleClick}&gt;Follow&lt;/button&gt;
+  );
+}
+</code></pre>
+      <p>
+        Muestra un botón en el que se hace clic para simular, mediante la
+        función setTimeout, la ejecución de una consulta de red y, a
+        continuación, muestra una ventana de mensaje que confirma la ejecución
+        de la operación. Por ejemplo, si en props.user se almacena
+        &#39;Dan&#39;, en la ventana del mensaje, después de tres segundos,
+        aparecerá &#39;Followed Dan&#39;.
+      </p>
+      <p>
+        Tenga en cuenta que no importa si se utilizan funciones de flecha o
+        anuncios de funciones. El diseño de la vista function handleClick ()
+        funcionará exactamente igual.
+      </p>
+      <p>
+        ¿Cómo puedo reescribir este componente como una clase? Si simplemente
+        rehace el código que acaba de revisar convirtiéndolo en un código de
+        componente basado en la clase, resulta lo siguiente:
+      </p>
+      <pre><code class="language-JavaScript">class ProfilePage extends React.Component {
+  showMessage = () =&gt; {
+    alert(&#39;Followed &#39; + this.props.user);
+  };
+
+  handleClick = () =&gt; {
+    setTimeout(this.showMessage, 3000);
+  };
+
+  render() {
+    return &lt;button onClick={this.handleClick}&gt;Follow&lt;/button&gt;;
+  }
+}
+</code></pre>
+      <p>
+        Se acepta generalmente que dos fragmentos de código similares son
+        equivalentes. Y los desarrolladores suelen ser completamente libres, en
+        el curso de la refactorización del código, para convertir una cosa en
+        otra sin pensar en las posibles consecuencias.
+      </p>
+      <p><img src="images/react01.gif" alt="FuncClass" /></p>
+      <p>
+        Sin embargo, hay una pequeña diferencia entre estos fragmentos de
+        código. Mira más de cerca. ¿Ves la diferencia? Por ejemplo, no la vi de
+        inmediato.
+      </p>
+      <p>
+        A continuación vamos a considerar esta diferencia, así que aquí, para
+        aquellos que quieren entender la esencia de lo que está sucediendo, un
+        ejemplo de trabajo de este código. (<a
+          href="https://codesandbox.io/s/pjqnl16lm7"
+          >https://codesandbox.io/s/pjqnl16lm7</a
+        >)
+      </p>
+      <p>
+        Antes de continuar, me gustaría hacer hincapié en que la diferencia en
+        cuestión no tiene nada que ver con los Hooks React. En ejemplos
+        anteriores, por cierto, los hooks ni siquiera se utilizan. Se trata de
+        la diferencia entre las funciones y las clases en React. Y si usted está
+        planeando utilizar muchos componentes funcionales en sus aplicaciones
+        React, entonces usted puede querer entender esta diferencia.
+      </p>
+      <p>
+        De hecho, la diferencia entre las funciones y las clases se ilustra con
+        el ejemplo de error que se encuentra a menudo en las aplicaciones de
+        React.
+      </p>
+      <h3
+        id="un-error-que-se-encuentra-con-frecuencia-en-las-aplicaciones-react"
+      >
+        Un error que se encuentra con frecuencia en las aplicaciones React
+      </h3>
+      <p>
+        Abra la página de ejemplo que muestra la lista que permite seleccionar
+        perfiles de usuario y los dos botones de seguimiento que muestran los
+        componentes ProfilePageFunction y ProfilePageClass, funcionales y
+        basados en la clase, cuyo código se muestra más arriba. (<a
+          href="https://codesandbox.io/s/pjqnl16lm7"
+          >https://codesandbox.io/s/pjqnl16lm7</a
+        >)
+      </p>
+      <p>
+        Intente, para cada uno de estos botones, realizar la siguiente secuencia
+        de acciones:
+      </p>
+      <ol>
+        <li>Haga clic en el botón.</li>
+        <li>
+          Cambie el perfil seleccionado antes de pasar 3 segundos después de
+          hacer clic en el botón.
+        </li>
+        <li>Lea el texto que aparece en la ventana del mensaje.</li>
+      </ol>
+      <p>Una vez hecho esto, notará las siguientes características:</p>
+      <ul>
+        <li>
+          Al hacer clic en un botón formado por un componente funcional, con el
+          perfil Dan seleccionado y al cambiar posteriormente al perfil Sophie,
+          se mostrará &#39;Seguir dando&#39; en la ventana del mensaje.
+        </li>
+        <li>
+          Si se hace lo mismo con un botón formado por un componente basado en
+          clase, se deducirá &#39;Followed Sophie&#39;.
+        </li>
+      </ul>
+      <p><img src="images/react02.gif" alt="react02" /></p>
+      <p>
+        En este ejemplo, el comportamiento del componente funcional es correcto.
+        Si me suscribí a un perfil de alguien y luego pasé a otro perfil, mi
+        componente no debe dudar de cuál es el perfil al que me inscribí.
+        Obviamente, la implementación del mecanismo en cuestión, basada en el
+        uso de clases, contiene un error.
+      </p>
+      <h3 id="causas-del-mal-comportamiento-del-componente-basado-en-la-clase">
+        Causas del mal comportamiento del componente basado en la clase
+      </h3>
+      <p>
+        ¿Por qué un componente basado en clase se comporta así? Para entender
+        esto, echemos un vistazo al método showMessage en nuestra clase:
+      </p>
+      <pre><code class="language-JavaScript">class ProfilePage extends React.Component {
+  showMessage = () =&gt; {
+    alert(&#39;Followed &#39; + this.props.user);
+  };
+</code></pre>
+      <p>
+        Este método lee los datos de this.props.user. Las propiedades de React
+        son inmutables, por lo que no cambian. Sin embargo, esta, como siempre
+        ha sido, es una entidad mutable.
+      </p>
+      <p>
+        De hecho, el objetivo de tener esto en la clase radica en la posibilidad
+        de que esto cambie. La propia biblioteca React realiza periódicamente
+        mutaciones de esta, lo que permite trabajar con versiones recientes del
+        método render y los métodos del ciclo de vida del componente.
+      </p>
+      <p>
+        Como resultado, si nuestro componente vuelve a renderizar durante la
+        ejecución de la consulta, cambiará this.props. Después de esto, el
+        método showMessage leerá el valor del usuario desde una entidad
+        «demasiado nueva».
+      </p>
+      <p>
+        Esto le permite hacer una observación interesante sobre las interfaces
+        de usuario. Si se dice que la interfaz de usuario, conceptualmente, es
+        una función del estado actual de la aplicación, los controladores de
+        eventos forman parte de los resultados de renderizado, al igual que los
+        resultados de renderizado visibles. Nuestros manejadores de eventos
+        «pertenecen» a una operación de renderizado específica junto con
+        propiedades y estado específicos.
+      </p>
+      <p>
+        Sin embargo, la planificación del tiempo de espera, cuyo collback lee
+        this.props, rompe esta conexión. El collback showMessage no está
+        «vinculado» a ninguna operación de renderizado en particular, como
+        resultado, «pierde» las propiedades correctas. La lectura de datos de
+        esta relación rompe.
+      </p>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <hr />
+      <hr />
+      <h2 id="porque-utilizamos-props-en-react-cual-es-su-funcionalidad">
+        Porque utilizamos Props en React? cual es su funcionalidad?
+      </h2>
+      <p><img src="images/props01.webp" alt="props01" /></p>
+      <p>
+        Los componentes React utilizan props para interactuar entre sí. Cada
+        componente padre puede pasar algo de información a sus componentes
+        hijos, pasándoles los parámetros. Los parámetros pueden recordarle los
+        atributos HTML, pero a través de ellos puede pasar cualquier valor de
+        JavaScript, incluidos objetos, arreglos y funciones.
+      </p>
+      <h3 id="opciones-conocidas">Opciones conocidas</h3>
+      <p>
+        Los parámetros son la información que pasa a la etiqueta JSX. Por
+        ejemplo, className, src, alt, width y height son algunos de los
+        parámetros que puede pasar a la etiqueta &lt; img &gt;:
+      </p>
+      <pre><code class="language-JavaScript">function Avatar() {
+    return (
+        &lt;img
+            className=&quot;avatar&quot;
+            src=&quot;https://i.imgur.com/1bX5QH6.jpg&quot;
+            alt=&quot;Lin Lanying&quot;
+            width={100}
+            height={100}
+        /&gt;
+    );
+}
+
+export default function Profile() {
+    return &lt;Avatar /&gt;;
+}
+</code></pre>
+      <p>
+        Los parámetros que puede pasar a la etiqueta &lt; img &gt; están
+        predefinidos (ReactDOM cumple con el estándar HTML). Pero puede pasar
+        cualquier configuración a sus componentes, como &lt; Avatar &gt;, para
+        configurarlos. Así es como!
+      </p>
+      <h3 id="transferencia-de-parámetros-a-un-componente">
+        Transferencia de parámetros a un componente
+      </h3>
+      <p>
+        En este código, el componente Perfil no pasa ningún parámetro a su hijo
+        Avatar:
+      </p>
+      <pre><code class="language-JavaScript">export default function Profile() {
+    return &lt;Avatar /&gt;;
+}
+</code></pre>
+      <p>Puede pasar a Avatar algunos parámetros en dos etapas.</p>
+      <h4 id="paso-1-pase-los-parámetros-al-componente-secundario">
+        Paso 1: Pase los parámetros al componente secundario
+      </h4>
+      <p>
+        Primero pase a Avatar algunos parámetros. Por ejemplo, pasaremos dos
+        parámetros: persona (objeto) y tamaño (número):
+      </p>
+      <pre><code class="language-JavaScript">export default function Profile() {
+    return (
+        &lt;Avatar
+            person={{
+                name: &#39;Lin Lanying&#39;,
+                imageId: &#39;1bX5QH6&#39;,
+            }}
+            size={100}
+        /&gt;
+    );
+}
+</code></pre>
+      <p>Ahora puede leer estos parámetros dentro del componente Avatar.</p>
+      <h4 id="paso-2-leer-parámetros-dentro-del-componente-secundario">
+        Paso 2: Leer parámetros dentro del componente secundario
+      </h4>
+      <p>
+        Puede leer estos parámetros enumerando sus nombres de persona, tamaño,
+        separados por comas dentro ({y}) inmediatamente después de la función
+        Avatar. Esto le permitirá usarlos dentro del código de Avatar como lo
+        haría con una variable.
+      </p>
+      <pre><code class="language-JavaScript">function Avatar({ person, size }) {
+    // person and size are available here
+}
+</code></pre>
+      <p>
+        Agregue a Avatar una lógica que utilice los parámetros person y Size
+        para renderizar, y todo está listo.
+      </p>
+      <p>
+        Ahora puede configurar Avatar para renderizar de varias maneras con
+        diferentes parámetros. ¡Intente ajustar los valores!
+      </p>
+      <pre><code class="language-JavaScript"># utils.js
+export function getImageUrl(person, size = &#39;s&#39;) {
+    return (
+        &#39;https://i.imgur.com/&#39; +
+        person.imageId +
+        size +
+        &#39;.jpg&#39;
+    );
+}
+</code></pre>
+      <pre><code class="language-JavaScript">import { getImageUrl } from &#39;./utils.js&#39;;
+
+function Avatar({ person, size }) {
+    return (
+        &lt;img
+            className=&quot;avatar&quot;
+            src={getImageUrl(person)}
+            alt={person.name}
+            width={size}
+            height={size}
+        /&gt;
+    );
+}
+
+export default function Profile() {
+    return (
+        &lt;div&gt;
+            &lt;Avatar
+                size={100}
+                person={{
+                    name: &#39;Katsuko Saruhashi&#39;,
+                    imageId: &#39;YfeOqp2&#39;,
+                }}
+            /&gt;
+            &lt;Avatar
+                size={80}
+                person={{
+                    name: &#39;Aklilu Lemma&#39;,
+                    imageId: &#39;OKS67lh&#39;,
+                }}
+            /&gt;
+            &lt;Avatar
+                size={50}
+                person={{
+                    name: &#39;Lin Lanying&#39;,
+                    imageId: &#39;1bX5QH6&#39;,
+                }}
+            /&gt;
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+      <p>
+        Las opciones le permiten pensar en los componentes padre e hijo de forma
+        independiente. Por ejemplo, puede cambiar la configuración de persona o
+        tamaño dentro de Perfil sin tener que pensar en cómo Avatar los usa. Del
+        mismo modo, puede cambiar la forma en que Avatar utiliza estos
+        parámetros sin buscar en Perfil.
+      </p>
+      <p>
+        Puedes pensar en los parámetros como «plumas» que se pueden ajustar.
+        Cumplen la misma función que los argumentos para las funciones - ¡de
+        hecho, el parámetro es el único argumento de su componente! Las
+        funciones de los componentes React aceptan un único argumento: el objeto
+        props:
+      </p>
+      <pre><code class="language-JavaScript">function Avatar(props) {
+    let person = props.person;
+    let size = props.size;
+    // ...
+}
+</code></pre>
+      <p>
+        Normalmente no necesita todo el objeto props, por lo que lo
+        desestructurará en parámetros separados.
+      </p>
+      <h4 id="especificar-el-valor-predeterminado-para-el-parámetro">
+        Especificar el valor predeterminado para el parámetro
+      </h4>
+      <p>
+        Si desea establecer un valor predeterminado para un parámetro cuando no
+        se especifica ningún valor, puede hacerlo mediante la desestructuración
+        colocando = y el valor predeterminado inmediatamente después del
+        parámetro:
+      </p>
+      <pre><code class="language-JavaScript">function Avatar({ person, size = 100 }) {
+    // ...
+}
+</code></pre>
+      <p>
+        Ahora, si &lt; Avatar person = {... }/&gt; aparece sin la propiedad
+        size, entonces size se establecerá en 100.
+      </p>
+      <p>
+        El valor predeterminado sólo se utiliza si falta el parámetro size o si
+        se pasa size = {undefined}. Pero si pasa size = {null} o size = {0}, no
+        se utilizará el valor predeterminado.
+      </p>
+      <h4 id="reenviar-parámetros-con-sintaxis-jsx-spread">
+        Reenviar parámetros con sintaxis JSX spread
+      </h4>
+      <p>A veces la transferencia de parámetros se vuelve muy repetitiva:</p>
+      <pre><code class="language-JavaScript">function Profile({ person, size, isSepia, thickBorder }) {
+    return (
+        &lt;div className=&quot;card&quot;&gt;
+            &lt;Avatar
+                person={person}
+                size={size}
+                isSepia={isSepia}
+                thickBorder={thickBorder}
+            /&gt;
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+      <p>
+        No hay nada malo en el código repetitivo - puede ser más legible. Pero a
+        veces puede ser importante para ti la brevedad. Algunos componentes
+        pasan todos sus parámetros a sus componentes secundarios, por ejemplo,
+        cómo lo hace este Perfil con Avatar. Como no utilizan parámetros
+        directamente, tiene sentido utilizar una sintaxis de espray más concisa:
+      </p>
+      <pre><code class="language-JavaScript">function Profile(props) {
+    return (
+        &lt;div className=&quot;card&quot;&gt;
+            &lt;Avatar {...props} /&gt;
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+      <p>
+        Esto reenvía todos los parámetros de Perfil a Avatar sin enumerar los
+        nombres de cada uno.
+      </p>
+      <p>
+        Utilice la sintaxis de propagación de forma discreta. Si lo usas en cada
+        segundo componente, algo está mal. A menudo, esto indica que debe
+        dividir sus componentes y pasar los componentes secundarios como JSX.
+        ¡Más información sobre esto!
+      </p>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <hr />
+      <hr />
+      <h2 id="que-es-jsx">Que es JSX?</h2>
+      <p><img src="images/jsx01.png" alt="jsx01" /></p>
+      <h3 id="jsx---detalles">JSX - Detalles</h3>
+      <p>Fundamentalmente, JSX es un azúcar sintáctico para la función:</p>
+      <pre><code class="language-JavaScript">React.createElement(component, props, ...children)
+</code></pre>
+      <p>Código JSX:</p>
+      <pre><code class="language-JSX">&lt;MyButton color=&quot;blue&quot; shadowSize={2}&gt;
+  Click Me
+&lt;/MyButton&gt;
+</code></pre>
+      <p>compilada en:</p>
+      <pre><code class="language-JavaScript">React.createElement(
+  MyButton,
+  {color: &#39;blue&#39;, shadowSize: 2},
+  &#39;Click Me&#39;
+)
+</code></pre>
+      <p>
+        También puede utilizar un formulario de auto-cierre para etiquetas que
+        no tengan descendientes. Por ejemplo:
+      </p>
+      <pre><code class="language-JSX">&lt;div className=&quot;sidebar&quot; /&gt;
+</code></pre>
+      <p>compilada en:</p>
+      <pre><code class="language-JavaScript">React.createElement(
+  &#39;div&#39;,
+  {className: &#39;sidebar&#39;},
+  null
+)
+</code></pre>
+      <p>
+        Puede probar cómo se compilan diferentes diseños JSX en JavaScript en el
+        compilador en línea de Babel. (<a href="https://babeljs.io/"
+          >https://babeljs.io/</a
+        >)
+      </p>
+      <p><img src="images/jsx02.jpg" alt="jsx02" /></p>
+      <h3 id="especificación-de-los-tipos-de-elementos-react">
+        Especificación de los tipos de elementos React
+      </h3>
+      <p>
+        La parte inicial de la etiqueta JSX especifica el tipo de elemento
+        React.
+      </p>
+      <p>
+        Los tipos definidos desde Mayúsculas indican que la etiqueta hace
+        referencia a un componente React. Estas etiquetas, durante el proceso de
+        compilación, hacen referencia a una variable con nombre que contiene el
+        componente React. Por lo tanto, tenga en cuenta: esta variable debe
+        estar en el ámbito de la visibilidad. Por ejemplo: Si utiliza la
+        expresión JSX - &lt; Foo/&gt;, la variable Foo debe estar en el área de
+        visibilidad.
+      </p>
+      <h4 id="react-debe-estar-en-el-ámbito-de-visibilidad">
+        React debe estar en el ámbito de visibilidad
+      </h4>
+      <p>
+        Debido a que JSX se compila en las llamadas a la función
+        React.createElement, la librería React siempre debe estar en el área de
+        visibilidad de su código JSX.
+      </p>
+      <p>
+        Por ejemplo: ambas líneas de importación son necesarias en este código,
+        ya que React y CustomButton no se incluyen directamente en JavaScript:
+      </p>
+      <pre><code class="language-JavaScript">import React from &#39;react&#39;;
+import CustomButton from &#39;./CustomButton&#39;;
+
+function WarningButton() {
+  // return React.createElement(CustomButton, {color: &#39;red&#39;}, null);
+  return &lt;CustomButton color=&quot;red&quot; /&gt;;
+}
+</code></pre>
+      <p>
+        Si no utiliza ningún empaquetador de JavaScript y agrega Aprox
+        directamente a la etiqueta &lt; script &gt;, React siempre estará en el
+        ámbito de visibilidad global.
+      </p>
+      <h4 id="uso-de-notación-por-punto-en-tipo-jsx">
+        Uso de notación por punto en tipo JSX
+      </h4>
+      <p>
+        Se puede hacer referencia a un componente React utilizando una notación
+        a través de un punto en JSX. Esto es conveniente si usted tiene un
+        módulo que exporta varios componentes React. Por ejemplo, si
+        MyComponents.DatePicker es un componente, puede utilizar esta notación
+        directamente en JSX:
+      </p>
+      <pre><code class="language-JavaScript">import React from &#39;react&#39;;
+
+const MyComponents = {
+  DatePicker: function DatePicker(props) {
+    return &lt;div&gt;Imagine a {props.color} datepicker here.&lt;/div&gt;;
+  }
+}
+
+function BlueDatePicker() {
+  return &lt;MyComponents.DatePicker color=&quot;blue&quot; /&gt;;
+}
+</code></pre>
+      <h5
+        id="los-componentes-recién-definidos-que-no-formen-parte-de-la-biblioteca-estándar-de-react-deben-denominarse-con-letra-mayúscula"
+      >
+        Los componentes recién definidos que no formen parte de la biblioteca
+        estándar de React deben denominarse con letra mayúscula
+      </h5>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <hr />
+      <hr />
+      <h2 id="que-es-el-state-en-react">Que es el state en React?</h2>
+      <p><img src="images/state01.jpg" alt="state01" /></p>
+      <h3 id="estado-memoria-del-componente">Estado: memoria del componente</h3>
+      <p>
+        Los componentes a menudo deben cambiar lo que aparece en la pantalla
+        como resultado de la interacción. La entrada de texto en el formulario
+        debe actualizar el campo de entrada, al hacer clic en el botón
+        «siguiente» en el carrusel de imágenes debe cambiar la imagen mostrada,
+        al hacer clic en el botón «comprar» debe colocar el artículo en la
+        cesta. Los componentes deben «recordar» las cosas: el valor de entrada
+        actual, la imagen actual, la papelera de reciclaje. Este tipo de memoria
+        específica de componentes se denomina estado (state).
+      </p>
+      <h4 id="cuando-la-variable-normal-no-es-suficiente">
+        Cuando la variable normal no es suficiente
+      </h4>
+      <p>
+        Aquí está el componente que muestra la imagen de la escultura. Haciendo
+        clic en el botón «Siguiente» debe mostrar la siguiente escultura,
+        cambiando el índice a 1, luego 2 y así sucesivamente. Sin embargo, no
+        funciona (¡puedes intentarlo!):
+      </p>
+      <pre><code class="language-JavaScript">import { sculptureList } from &#39;./data.js&#39;;
+
+export default function Gallery() {
+    let index = 0;
+
+    function handleClick() {
+        index = index + 1;
+    }
+
+    let sculpture = sculptureList[index];
+    return (
+        &lt;&gt;
+            &lt;button onClick={handleClick}&gt;Next&lt;/button&gt;
+            &lt;h2&gt;
+                &lt;i&gt;{sculpture.name} &lt;/i&gt;
+                by {sculpture.artist}
+            &lt;/h2&gt;
+            &lt;h3&gt;
+                ({index + 1} of {sculptureList.length})
+            &lt;/h3&gt;
+            &lt;img src={sculpture.url} alt={sculpture.alt} /&gt;
+            &lt;p&gt;{sculpture.description}&lt;/p&gt;
+        &lt;/&gt;
+    );
+}
+</code></pre>
+      <p>
+        El controlador de eventos handleClick actualiza la variable de índice
+        local. Pero dos cosas no permiten ver este cambio:
+      </p>
+      <ol>
+        <li>
+          Las variables locales no se guardan entre renders. Cuando React
+          renderiza este componente por segunda vez, lo renderiza desde cero -
+          no tiene en cuenta ningún cambio en las variables locales.
+        </li>
+        <li>
+          Los cambios en las variables locales no causan renderización. React no
+          entiende que necesite volver a renderizar un componente con nuevos
+          datos.
+        </li>
+      </ol>
+      <p>
+        Para actualizar un componente con nuevos datos, deben ocurrir dos cosas:
+      </p>
+      <ol>
+        <li>Guardar datos entre renders.</li>
+        <li>
+          El desencadenador React para renderizar un componente con datos nuevos
+          (re-renderizado).
+        </li>
+      </ol>
+      <p>Hook useState proporciona estas dos cosas:</p>
+      <ol>
+        <li>Variable state para guardar datos entre renders.</li>
+        <li>
+          La función state setter para actualizar la variable y ejecutar React
+          para volver a renderizar el componente.
+        </li>
+      </ol>
+      <h4 id="agregar-variable-de-estado">Agregar variable de estado</h4>
+      <p><img src="images/state02.png" alt="state02" /></p>
+      <p>
+        Para agregar una variable de estado, importe useState desde React en la
+        parte superior del archivo:
+      </p>
+      <pre><code class="language-JavaScript">import { useState } from &#39;react&#39;;
+</code></pre>
+      <p>A continuación, reemplace esta línea:</p>
+      <pre><code class="language-JavaScript">let index = 0;
+</code></pre>
+      <p>Con</p>
+      <pre><code class="language-JavaScript">const [index, setIndex] = useState(0);
+</code></pre>
+      <p>
+        index es una variable de estado y setIndex es una función instaladora.
+      </p>
+      <p>Así es como trabajan juntos en handleClick:</p>
+      <pre><code class="language-JavaScript">function handleClick() {
+    setIndex(index + 1);
+}
+</code></pre>
+      <p>Ahora haga clic en Siguiente para cambiar la escultura actual:</p>
+      <pre><code class="language-JavaScript">import { useState } from &#39;react&#39;;
+import { sculptureList } from &#39;./data.js&#39;;
+
+export default function Gallery() {
+    const [index, setIndex] = useState(0);
+
+    function handleClick() {
+        setIndex(index + 1);
+    }
+
+    let sculpture = sculptureList[index];
+    return (
+        &lt;&gt;
+            &lt;button onClick={handleClick}&gt;Next&lt;/button&gt;
+            &lt;h2&gt;
+                &lt;i&gt;{sculpture.name} &lt;/i&gt;
+                by {sculpture.artist}
+            &lt;/h2&gt;
+            &lt;h3&gt;
+                ({index + 1} of {sculptureList.length})
+            &lt;/h3&gt;
+            &lt;img src={sculpture.url} alt={sculpture.alt} /&gt;
+            &lt;p&gt;{sculpture.description}&lt;/p&gt;
+        &lt;/&gt;
+    );
+}
+</code></pre>
+      <h4 id="conoce-tu-primer-gancho">Conoce tu primer gancho</h4>
+      <p>
+        En React, la función useState, como cualquier otra función que comienza
+        con «use», se llama hook.
+      </p>
+      <p>
+        Los hooks son funciones especiales que sólo están disponibles durante el
+        renderizado (que veremos con más detalle en la página siguiente). Le
+        permiten «conectarse» a las diferentes funciones de React.
+      </p>
+      <p>
+        La fortuna es sólo una de estas funciones, pero los otros hooks se
+        conocerán más tarde.
+      </p>
+      <h4 id="anatomía-de-usestate">Anatomía de useState</h4>
+      <p>
+        Cuando llamas a useState, le dices a React que quieres que este
+        componente recuerde algo:
+      </p>
+      <pre><code class="language-JavaScript">const [index, setIndex] = useState(0);
+</code></pre>
+      <p>En este caso, desea que React recuerde el índice.</p>
+      <p>
+        El único argumento para useState es el valor inicial de su variable de
+        estado. En este ejemplo, el valor inicial del índice se establece en 0
+        mediante useState (0).
+      </p>
+      <p>
+        Con cada renderizado de un componente, useState produce una matriz que
+        contiene dos valores:
+      </p>
+      <ol>
+        <li>Variable state (índice) con el valor que ha guardado.</li>
+        <li>
+          Función de configuración de estado (setIndex) que puede actualizar la
+          variable de estado y llamar a React para volver a renderizar el
+          componente.
+        </li>
+      </ol>
+      <p>Así es como sucede en la acción:</p>
+      <ol>
+        <li>
+          Dado que ha pasado 0 a useState como valor inicial para el índice, se
+          devolverá [0, setIndex]. React recuerda que 0 es el último valor del
+          estado.
+        </li>
+        <li>
+          Está actualizando el estado. Cuando el usuario hace clic en un botón,
+          se llama a setIndex (index + 1). el índice es 0, por lo que se llama a
+          setIndex (1). Esto indica a React que el índice es ahora 1 y llama a
+          otro render.
+        </li>
+        <li>
+          El segundo render de su componente. Aprox todavía ve useState (0),
+          pero como React recuerda que ha establecido el índice en 1, devuelve
+          [1, setIndex] en su lugar.
+        </li>
+        <li>¡Y así sucesivamente!</li>
+      </ol>
+      <h4 id="estado-aislado-y-privado">Estado aislado y privado</h4>
+      <p>
+        El estado es local para la instancia del componente en pantalla. En
+        otras palabras, si muestra el mismo componente dos veces, cada copia
+        tendrá un estado completamente aislado. Cambiar uno de ellos no afectará
+        al otro.
+      </p>
+      <p>
+        En este ejemplo, el componente Gallery utilizado anteriormente aparece
+        dos veces sin cambios en la lógica. Trate de hacer clic en los botones
+        dentro de cada una de las galerías. Tenga en cuenta que su estado es
+        independiente:
+      </p>
+      <pre><code class="language-JavaScript">import Gallery from &#39;./Gallery.js&#39;;
+
+export default function Page() {
+    return (
+        &lt;div className=&quot;Page&quot;&gt;
+            &lt;Gallery /&gt;
+            &lt;Gallery /&gt;
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+      <p>
+        Esto es lo que diferencia el estado de las variables normales que puede
+        declarar en la parte superior de su módulo. El estado no está vinculado
+        a una llamada específica a una función o lugar en el código, es «local»
+        para un lugar específico en la pantalla. Ha mostrado dos componentes
+        &lt; Gallery/&gt;, por lo que su estado se almacena por separado.
+      </p>
+      <p>
+        También tenga en cuenta que el componente Page no «sabe» nada sobre el
+        estado de Gallery e incluso si lo tiene. A diferencia de los props, el
+        estado es totalmente privado para el componente que lo declara. El
+        componente padre no puede modificarlo. Esto le permite agregar un estado
+        a cualquier componente o eliminarlo sin afectar al resto de componentes.
+      </p>
+      <p>
+        ¿Y si quieres que ambas galerías sincronicen sus estados? La forma
+        correcta de hacer esto es eliminar el estado de los componentes
+        secundarios y agregarlo a su componente padre compartido más cercano.
+      </p>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <hr />
+      <hr />
+      <h2
+        id="en-que-tipo-de-componente-se-utiliza-el-constructor-y-explique-porque"
+      >
+        En que tipo de componente se utiliza el Constructor y explique porque!
+      </h2>
+      <p><img src="images/const02.webp" alt="const02" /></p>
+      <p>
+        El constructor es un método utilizado para inicializar el estado de un
+        objeto en una clase. Se llama automáticamente durante la creación de un
+        objeto en una clase.
+      </p>
+      <p>
+        El concepto de constructor es el mismo en React. Se llama al constructor
+        de un componente React antes de montar el componente. Cuando implementa
+        el constructor para un componente React, debe llamar al método super
+        (props) antes de cualquier otra instrucción. Si no llama al método super
+        (props), esto.props no estará definido en el constructor y puede
+        provocar errores.
+      </p>
+      <pre><code class="language-JavaScript">Constructor(props){
+     super(props);
+}
+</code></pre>
+      <p>
+        En React, los constructores se utilizan principalmente para dos
+        propósitos:
+      </p>
+      <ol>
+        <li>
+          Se utiliza para inicializar el estado local del componente asignando
+          un objeto a this.state.
+        </li>
+        <li>
+          Se utiliza para enlazar los métodos de controlador de eventos que se
+          producen en el componente.
+        </li>
+      </ol>
+      <p>
+        No se puede llamar al método setState () directamente en el constructor
+        (). Si el componente necesita usar el estado local, necesita usar
+        directamente &#39;this.state&#39; para asignar el estado inicial en el
+        constructor. El constructor sólo utiliza esto.state para asignar el
+        estado inicial y todos los demás métodos deben utilizar el método
+        set.state ().
+      </p>
+      <h3 id="ejemplo">Ejemplo</h3>
+      <p>
+        El concepto del constructor puede entenderse a partir del siguiente
+        ejemplo.
+      </p>
+      <h4 id="appjs">App.js</h4>
+      <pre><code class="language-JavaScript">import React, { Component } from &#39;react&#39;;
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+         data: &#39;www.javatpoint.com&#39;
+      }
+    this.handleEvent = this.handleEvent.bind(this);
+  }
+  handleEvent(){
+    console.log(this.props);
+  }
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+    &lt;h2&gt;React Constructor Example&lt;/h2&gt;
+    &lt;input type =&quot;text&quot; value={this.state.data} /&gt;
+        &lt;button onClick={this.handleEvent}&gt;Please Click&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+export default App;
+</code></pre>
+      <h4 id="mainjs">Main.js</h4>
+      <pre><code class="language-JavaScript">import React from &#39;react&#39;;
+import ReactDOM from &#39;react-dom&#39;;
+import App from &#39;./App.js&#39;;
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById(&#39;app&#39;));
+</code></pre>
+      <h3 id="salida">Salida</h3>
+      <p>Cuando ejecuta el código anterior, obtiene la siguiente salida.</p>
+      <p><img src="images/const01.png" alt="const01" /></p>
+      <p>Las preguntas más comunes relacionadas con el constructor son:</p>
+      <h4 id="1-¿es-necesario-tener-un-constructor-en-cada-componente">
+        1. ¿Es necesario tener un constructor en cada componente?
+      </h4>
+      <p>
+        No, no es necesario tener un constructor en cada componente. Si el
+        componente no es complejo, simplemente devuelve un nodo.
+      </p>
+      <pre><code class="language-JavaScript">class App extends Component {
+    render () {
+        return (
+            &lt;p&gt; Name: { this.props.name }&lt;/p&gt;
+        );
+    }
+}
+</code></pre>
+      <h4 id="2-¿es-necesario-llamar-a-super--dentro-de-un-constructor">
+        2. ¿Es necesario llamar a super () dentro de un constructor?
+      </h4>
+      <p>
+        Sí, es necesario llamar a super () dentro de un constructor. Si necesita
+        establecer una propiedad o acceder a &#39;esto&#39; dentro del
+        constructor en su componente, debe llamar a super ().
+      </p>
+      <pre><code class="language-JavaScript">class App extends Component {
+    constructor(props){
+        this.fName = &quot;Jhon&quot;; // &#39;this&#39; is not allowed before super()
+    }
+    render () {
+        return (
+            &lt;p&gt; Name: { this.props.name }&lt;/p&gt;
+        );
+    }
+}
+</code></pre>
+      <p>
+        Cuando se ejecuta el código anterior, se obtiene un error diciendo
+        &#39;esto&#39; no está permitido antes de super (). Entonces, si
+        necesita acceder a los apoyos dentro del constructor, debe llamar a
+        super (apoyos).
+      </p>
+      <h3 id="funciones-de-flecha">Funciones de flecha</h3>
+      <p>
+        La función Flecha es la nueva característica del estándar ES6. Si
+        necesita usar funciones de flecha, no es necesario enlazar ningún evento
+        a «esto». Aquí, el alcance de «esto» es global y no se limita a ninguna
+        función de llamada. Así que si usted está utilizando la función de
+        flecha, no hay necesidad de enlazar &#39;esto&#39; dentro del
+        constructor.
+      </p>
+      <pre><code class="language-JavaScript">import React, { Component } from &#39;react&#39;;
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+         data: &#39;www.javatpoint.com&#39;
+      }
+  }
+  handleEvent = () =&gt; {
+    console.log(this.props);
+  }
+  render() {
+    return (
+      &lt;div className=&quot;App&quot;&gt;
+    &lt;h2&gt;React Constructor Example&lt;/h2&gt;
+    &lt;input type =&quot;text&quot; value={this.state.data} /&gt;
+        &lt;button onClick={this.handleEvent}&gt;Please Click&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+export default App;
+</code></pre>
+      <p>Podemos usar un constructor de las siguientes maneras:</p>
+      <h4 id="1-el-constructor-se-utiliza-para-inicializar-el-estado">
+        1. El constructor se utiliza para inicializar el estado.
+      </h4>
+      <pre><code class="language-JavaScript">class App extends Component {
+  constructor(props){
+        // here, it is setting initial value for &#39;inputTextValue&#39;
+        this.state = {
+            inputTextValue: &#39;initial value&#39;,
+        };
+  }
+}
+</code></pre>
+      <h4 id="2-usando-este-constructor-interior">
+        2. Usando &#39;este&#39; constructor interior
+      </h4>
+      <pre><code class="language-JavaScript">class App extends Component {
+    constructor(props) {
+        // when you use &#39;this&#39; in constructor, super() needs to be called first
+        super();
+        // it means, when you want to use &#39;this.props&#39; in constructor, call it as below
+        super(props);
+    }
+}
+</code></pre>
+      <h4 id="3-inicialización-de-bibliotecas-de-terceros">
+        3. Inicialización de bibliotecas de terceros
+      </h4>
+      <pre><code class="language-JavaScript">class App extends Component {
+    constructor(props) {
+
+        this.myBook = new MyBookLibrary();
+
+        //Here, you can access props without using &#39;this&#39;
+        this.Book2 = new MyBookLibrary(props.environment);
+    }
+}
+</code></pre>
+      <h4
+        id="4-enlazar-algún-contexto-este-cuando-necesite-que-un-método-de-clase-se-pase-en-apoyos-a-los-niños"
+      >
+        4. Enlazar algún contexto (este) cuando necesite que un método de clase
+        se pase en apoyos a los niños.
+      </h4>
+      <pre><code class="language-JavaScript">class App extends Component {
+    constructor(props) {
+
+        // when you need to &#39;bind&#39; context to a function
+        this.handleFunction = this.handleFunction.bind(this);
+    }
+}
+</code></pre>
+      <a href="#course-checkpoint-14" class="button">Back to menu</a>
+      <a href="#course-checkpoint-14" id="fixedbutton">Back to menu</a>
+    </main>
+  </body>
+</html>
